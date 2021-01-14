@@ -9,10 +9,6 @@ name: 'app'
 # The runtime the application uses.
 type: 'python:3.8'
 
-# dependencies:
-#     python3:
-#         pip3: 'virtualenvwrapper'
-
 dependencies:
     python3:
        pipenv: '2018.10.13'
