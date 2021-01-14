@@ -9,14 +9,19 @@ name: 'app'
 # The runtime the application uses.
 type: 'python:3.8'
 
+# dependencies:
+#     python3:
+#         pip3: 'virtualenvwrapper'
+
 dependencies:
     python3:
-        pip3: 'virtualenvwrapper'
+       pipenv: '2018.10.13'
 
 hooks: 
     build: |
-        mkvirtualenv wagtailbakerydemo --python=python3.8
-        pip install -r requirements/base.txt
+        # mkvirtualenv wagtailbakerydemo --python=python3.8
+        # pip install -r requirements/base.txt
+        pipenv install --system --deploy
         cp bakerydemo/settings/local.py.example bakerydemo/settings/local.py
         echo "DJANGO_SETTINGS_MODULE=bakerydemo.settings.local" > .env
         ./manage.py migrate
