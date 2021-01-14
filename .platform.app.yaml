@@ -32,7 +32,13 @@ web:
         start:
             ./manage.py runserver $PORT
 
+disk: 1024
 
+# Set a local R/W mount for logs
+mounts:
+    'bakerydemo/media':
+        source: local
+        source_path: media
 
 # # The build-time dependencies of the app.
 # dependencies:
