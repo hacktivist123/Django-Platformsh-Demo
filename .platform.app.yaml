@@ -16,6 +16,7 @@ type: 'python:3.8'
 dependencies:
     python3:
        pipenv: '2018.10.13'
+       virtualenvwrapper: '4.8.4'
 
 hooks: 
     build: |
@@ -28,7 +29,7 @@ hooks:
         ./manage.py load_initial_data
         mkdir tmp && rsync -r bakerydemo/media/ tmp/
     deploy: |
-        rsync -r tmp/bakerydemo/media
+        rsync -r tmp/ bakerydemo/media
 
 web:
     commands:
