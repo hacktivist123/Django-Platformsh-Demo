@@ -11,7 +11,7 @@ type: 'python:3.8'
 
 dependencies:
     python3:
-        pip: 'virtualenvwrapper'
+        pip3: 'virtualenvwrapper'
 
 hooks: 
     build: |
