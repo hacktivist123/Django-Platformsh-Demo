@@ -24,13 +24,22 @@ hooks:
         ./manage.py migrate
         ./manage.py load_initial_data
         mkdir tmp && rsync -r bakerydemo/media/ tmp/
+
+        # symlink writable bakerydemodb to one in data/*. Move? Copy?
+        mv bakerydemodb bakerydemodb-tmp
+        ln -s data/bakerydemodb bakerydemodb
     deploy: |
+        cat bakerydemodb-tmp >> bakerydemodb
         rsync -r tmp/ bakerydemo/media
 
 web:
     commands:
         start:
             ./manage.py runserver $PORT
+
+relationships:
+    essearch: "searchelastic:elasticsearch"
+    # database: "db:postgresql"
 
 disk: 1024
 
@@ -39,6 +48,9 @@ mounts:
     'bakerydemo/media':
         source: local
         source_path: media
+    'data':
+        source: local
+        source_path: data
 
 # # The build-time dependencies of the app.
 # dependencies:
