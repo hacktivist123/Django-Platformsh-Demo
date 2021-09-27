@@ -1897,8 +1897,8 @@
     "path": "00010002",
     "depth": 2,
     "numchild": 6,
-    "title": "Welcome to the Wagtail Bakery!",
-    "draft_title": "Welcome to the Wagtail Bakery!",
+    "title": "Welcome to the Deploy Friday Bakery!",
+    "draft_title": "Welcome to the Deploy Friday Bakery!",
     "slug": "home",
     "content_type": [
       "base",
@@ -3491,8 +3491,8 @@
   "pk": 60,
   "fields": {
     "image": 9,
-    "hero_text": "A sample site designed to demonstrate the capabilities of the Wagtail Content Management System.",
-    "hero_cta": "Learn more about Wagtail",
+    "hero_text": "Local bread. Local ingredients.",
+    "hero_cta": "Learn more about Deploy Friday",
     "hero_cta_link": 76,
     "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p><b>Bread</b>\\u00a0is a\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Staple_food\\\">staple food</a>\\u00a0prepared from a\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Dough\\\">dough</a>\\u00a0of\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Flour\\\">flour</a>\\u00a0and\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Water\\\">water</a>, usually by\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Baking\\\">baking</a>. Throughout recorded history it has been popular around the world and is one of the oldest artificial foods, having been of importance since the dawn of\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Agriculture#History\\\">agriculture</a>.</p><p>Proportions of types of flour and other ingredients vary widely, as do modes of preparation. As a result, types, shapes, sizes, and textures of breads differ around the world. Bread may be\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Leaven\\\">leavened</a>\\u00a0by processes such as reliance on naturally occurring\\u00a0<a href=\\\"https://en.wikipedia.org/wiki/Sourdough\\\">sourdough</a>\\u00a0microbes, chemicals, industrially produced yeast, or high-pressure aeration. Some bread is cooked before it can leaven, including for traditional or religious reasons. Non-cereal ingredients such as fruits, nuts and fats may be included. Commercial bread commonly contains additives to improve flavor, texture, color, shelf life, and ease of manufacturing.</p>\"}]",
     "promo_image": 37,
