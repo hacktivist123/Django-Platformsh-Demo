@@ -21,8 +21,8 @@ hooks:
         pipenv install --system --deploy
         cp bakerydemo/settings/local.py.example bakerydemo/settings/local.py
         echo "DJANGO_SETTINGS_MODULE=bakerydemo.settings.local" > .env
-        ./manage.py migrates
-        ./manage.py load_initial_data
+        ./manage.py migrate
+        ./manage.py load_initial_datas
         mkdir tmp && rsync -r bakerydemo/media/ tmp/
 
         # symlink writable bakerydemodb to one in data/*. Move? Copy?
@@ -40,7 +40,7 @@ web:
 relationships:
     essearch: "searchelastic:elasticsearch"
 
-    
+
     # database: "db:postgresql"
 
 disk: 1024
