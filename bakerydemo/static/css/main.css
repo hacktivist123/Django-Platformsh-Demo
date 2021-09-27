@@ -237,8 +237,8 @@ cite {
 .header {
   padding: 15px 0 15px;
   width: 100%;
-  background: rgb(25,17,18);
-  background: linear-gradient(135deg, rgba(25,17,18,1) 0%,rgba(55,28,25,1) 100%);
+  background: #145cc6;
+  /* background: linear-gradient(135deg, rgba(25,17,18,1) 0%,rgba(55,28,25,1) 100%); */
   z-index: 10;
 }
 .header h3 {
