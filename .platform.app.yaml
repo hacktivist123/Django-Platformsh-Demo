@@ -39,6 +39,8 @@ web:
 
 relationships:
     essearch: "searchelastic:elasticsearch"
+
+    
     # database: "db:postgresql"
 
 disk: 1024
